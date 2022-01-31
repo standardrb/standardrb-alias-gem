@@ -1,2 +1,4 @@
 require "bundler/gem_tasks"
-task :default => :spec
+require "standard/rake"
+
+task default: "standard:fix"
